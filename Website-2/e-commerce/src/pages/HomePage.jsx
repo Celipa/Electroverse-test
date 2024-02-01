@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react";
 import { ProductContext } from '../contexts/ProductContext';
 import Categories from '../components/Categories';
-import './HomePage.css';
+import '../components/ProductStyling.css';
 
 function HomePage() {
   const { loading, error, getProducts } = useContext(ProductContext);
@@ -20,7 +20,7 @@ function HomePage() {
     <div className="Home page">
       {
         loading 
-        ? <p>Loading...</p> // Modify this line
+        ? <p>Loading...</p> 
         : <Categories /> // Render Categories instead of ProductList
       }
     </div>

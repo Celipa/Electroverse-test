@@ -18,21 +18,19 @@ export const Navbar = ({ setSelectedCategory }) => {
   const navigate = useNavigate();
   const userDropdownRef = useRef(null);
   const GearDropdownRef = useRef(null);
-  // const { totalQuantity } = useSelector(state => state.shoppingCart)
   const { totalQuantity } = useCart()
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const logout = () => {
     // Clear user's session or authentication token
     localStorage.removeItem('token');
-    // Update the isLoggedIn state
     setIsLoggedIn(false);
     // Refresh the page
     window.location.reload();
     console.log('User logged out!');
     alert('You are now logged out!');
   };
-  const [categories, setCategories] = useState([]); // Declare categories here
+  const [categories, setCategories] = useState([]);
   useEffect(() => {
     axios.get('https://js2-ecommerce-api.vercel.app/api/products')
       .then(response => {
@@ -71,7 +69,6 @@ export const Navbar = ({ setSelectedCategory }) => {
             </div> */}
             <nav className="navbar">
               <NavLink to="/">home</NavLink>
-              {/* <NavLink to="/product">products</NavLink> */}
               <NavLink to="/contact">Contact us</NavLink>
             </nav>
 
@@ -110,8 +107,7 @@ export const Navbar = ({ setSelectedCategory }) => {
                     <ul>
                     <li className='hidden'><NavLink className="hidden" to="/orders">Orders</NavLink></li>
                 <li className='hidden'><NavLink className="hidden" to="/profile">Profile</NavLink></li>
-                <li className='hidden'><NavLink className="hidden" to="/logout" onClick={logout}>Logout</NavLink></li>
-                    {/* Add more progress options as needed */}
+                <li className='hidden'><NavLink className="hidden" to="/login" onClick={logout}>Logout</NavLink></li>
                     </ul>
                 </div>
                 )}

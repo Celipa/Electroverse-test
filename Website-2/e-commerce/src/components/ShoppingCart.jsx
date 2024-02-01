@@ -22,12 +22,12 @@ export const ShoppingCart = ({ isCheckoutPage, setIsOpen, className, onCheckout 
       ))}
         </div>
       </div>
-      <div className="cart-footer">
-        <div>
-          <p className='total-text'>Total Price: <span className='total-price'>{ totalPrice }:-</span> </p>
-          <small>Inkl. vat</small>
-        </div>
-        <div className='checkout-stuff'>
+      <div className={`cart-footer ${className}`}>
+        <div className={`checkout-summery-box ${className}`}>
+        <p className={`total-text ${className}`}>Total Price: <span className='total-price'>{ totalPrice }:-</span> </p>
+          <p className={`total-text ${className}`}>Number of items: <span className='total-price'>{ cart.length }</span> </p>
+          <p className='total-text'>Total Quantity: <span className='total-price'>{ cart.reduce((total, item) => total + item.quantity, 0) }</span> </p>
+          <div className='checkout-stuff'>
           { isCheckoutPage
             ? (
               <>
@@ -39,9 +39,10 @@ export const ShoppingCart = ({ isCheckoutPage, setIsOpen, className, onCheckout 
                 )}
               </>
             )
-            : <Link onClick={() => setIsOpen(false)} to="/checkout" className="cart-link">Checkout</Link>
+            : <Link onClick={() => setIsOpen(false)} to="/checkout" className={`checkout-summery-box ${className}`}>Checkout</Link>
           }
           
+        </div>
         </div>
       </div>
     </div>

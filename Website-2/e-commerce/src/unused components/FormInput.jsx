@@ -1,3 +1,5 @@
+// Denhär komponenten används ej.
+
 export const FormInput = ({ className, errorMsg, label, ...rest }) => {
   return (
     <div className={`form-group ${className}`}>

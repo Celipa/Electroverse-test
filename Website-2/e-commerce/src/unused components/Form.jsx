@@ -1,6 +1,7 @@
-import { FormInput } from "./FormInput"
+// Denhär komponenten används ej.
+import { FormInput } from "../components/FormInput"
 import { IoIosWarning } from "react-icons/io";
-import useForm from "./hooks/useForm";
+import useForm from "../components/hooks/useForm";
 
 export const Form = () => {
 

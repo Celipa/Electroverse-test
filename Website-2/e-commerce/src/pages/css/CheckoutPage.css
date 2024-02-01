@@ -11,6 +11,37 @@
     border: 1px solid #ccc;
     width: 94%;
 }
+.CheckoutPage .CheckoutSummery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+.CheckoutPage .CheckoutSummery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: .6rem;
+    border-bottom: 1px solid #ccc;
+    margin-top: -30%;
+    margin-left: 80%;
+}
+.CheckoutPage .CheckoutSummery h1{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgb(2, 2, 2);
+
+}
+.CheckoutPage .checkoutSummery-box p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(2, 2, 2);
+
+}
 .CheckoutPage .cart{
     width: 80%;
     height: 100%;
@@ -22,8 +53,16 @@
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
+.CheckoutPage .cart .cart-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    float: right;
+    background-color: rgb(230, 230, 230);
+    padding: 1rem;
+}
 .CheckoutPage .cart .checkout-item .img-products{
-    display: block;
     justify-content: center;
     text-align: start;
     margin-bottom: -16%;

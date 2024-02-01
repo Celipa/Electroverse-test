@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import './Login.css';
+import './css/Login.css';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -98,6 +98,7 @@ function Login() {
           <input type="password" name="password" autoComplete="off" onChange={handleInputChange} required />
         </label>
         <input type="submit" value="Log in" />
+        
         
         <div>
           <li>Don't have an account?</li>

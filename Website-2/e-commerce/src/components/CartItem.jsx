@@ -15,6 +15,7 @@ export const CartItem = ({ item, className }) => {
   // const dispatch = useDispatch()
   const { addToCart, removeOne, removeItem } = useCart()
   const limitedDescription = limitWords(item.product.description, 60); // Limit to 20 words
+  const limitedProductName = limitWords(item.product.name, 3); // Limit to 20 words
   const removeOneFromCart = () => {
     // dispatch(removeOne(item.product._id))
     removeOne(item.product._id)
@@ -33,9 +34,9 @@ export const CartItem = ({ item, className }) => {
   return (
     <div className={`checkout-item ${className}`}>
       <div className={`item-info ${className}`}>
-        <div className="img-products"><img src={item.product.images[0]} className={`product-image ${className}`} /></div>
-          <div className="item-info-text">
-            <p className={`Product-name ${className}`}>{item.product.name}</p>
+        <div className={`img-products ${className}`}><img src={item.product.images[0]} className={`product-image ${className}`} /></div>
+          <div className={`item-info-text ${className}`}>
+            <p className={`Product-name ${className}`}>{limitedProductName}</p>
             <p className={`product-description ${className}`}>{limitedDescription}</p>
             <p className={`quantity-price ${className}`}>{item.quantity} x {item.product.price}:- </p>
             </div>

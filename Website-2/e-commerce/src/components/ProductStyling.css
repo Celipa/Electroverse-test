@@ -138,3 +138,142 @@
     margin-left: -1.7rem;
     position: absolute;
   }
+
+  @media (max-width: 1760px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 20rem;
+      height: 20rem;
+    }
+    .product {
+      width: 30%;
+      margin: 10px 0;
+    }
+    
+  }
+
+  @media (max-width: 1024px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 18rem;
+      height: 18rem;
+    }
+    .product {
+      width: 70%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 1200px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product {
+      width: 30%;
+      margin: 10px 0;
+    }
+    
+  }
+
+  @media (max-width: 1000px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 35rem;
+      height: 35rem;
+    }
+    .product {
+      width: 40%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 800px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 30rem;
+      height: 30rem;
+    }
+    .product {
+      width: 40%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 600px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 25rem;
+      height: 25rem;
+    }
+    .product {
+      width: 40%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 500px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 20rem;
+      height: 20rem;
+    }
+    .product {
+      width: 40%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 400px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 15rem;
+      height: 15rem;
+    }
+    .product {
+      width: 40%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 300px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 20rem;
+      height: 20rem;
+    }
+    .product {
+      width: 70%;
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 200px) {
+    .products {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 5rem;
+      height: 5rem;
+    }
+    .product {
+      width: 60%;
+      margin: 10px 0;
+    }
+    
+  }
