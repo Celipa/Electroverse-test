@@ -1,0 +1,13 @@
+Jag har använt mig av
+
+Context react-icons Axios react-router-dom
+
+Detta är min inlämningsuppgift för Javascript 2 Vi skulle göra en e-commerce webpage för elektronik.
+
+Jag har tillagt några extra componenter som är bara för att sidan ska se ''bättre ut'' för min egna skull. Jag har till exempel lagt till en profilknapp, logout knapp och orders knapp i ''settings'' dropdownen. Profil sidan har ingen funktion, utan är bara för jag själv ville lägga till den. Dock fungerar orders knappen och logout knappen om användaren är inloggad.
+
+Allt på hemsidan ska funka som instruerat i uppgiften, men det kan uppstå ett fel då man trycker på en knapp i en av de dropdowns som finns, och knappen gör inget. Det är ett styling fel på min ände då det bara går att trycka på själva texten för att komma vidare.
+
+Om det uppstår ett Error meddelande i consolen när du trycker i navbaren är det bara att ignorera.
+
+Det kan hända att dropdown buggar ibland och inte försvinner när man försöker trycka bort dem. Dropdown funkar för alla komponenter i vanliga fall. Om det händer kan du ladda om hemsidan så funkar de igen.
