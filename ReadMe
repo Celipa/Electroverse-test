@@ -1,16 +1,22 @@
-Detta är min Examinations inlämning till Javascript 2
+This is my Examination assignment for Javascript 2
 
 
-Jag har använt mig av
+I have used
 
-Context react-icons Axios react-router-dom
+Context, react-icons, Axios and react-router-dom
 
-Detta är min inlämningsuppgift för Javascript 2 Vi skulle göra en e-commerce webpage för elektronik.
+This is my grading assignment for Javascript 2 where our assignment was to make an e-commerce webpage for electronics.
+Our teacher provided us with a custom API he built, which is why some components may be in Swedish.
 
-Jag har lagt till några extra componenter som är bara för att sidan ska se ''bättre ut'' för min egna skull. Jag har till exempel lagt till en profilknapp, logout knapp och orders knapp i ''settings'' dropdownen. Profil sidan har ingen funktion, utan är bara för jag själv ville lägga till den. Dock fungerar orders knappen och logout knappen om användaren är inloggad.
+I have added some extra components that are just to make the page look "better" for my own sake. 
+For example, I have added a profile button, logout button, and orders button in the ''settings'' dropdown. The profile page has no function, but is just because I wanted to add it myself. 
+However, the orders button and the logout button work if the user is logged in.
 
-Allt på hemsidan ska funka som instruerat i uppgiften, men det kan uppstå ett fel då man trycker på en knapp i en av de dropdowns som finns, och knappen gör inget. Det är ett styling fel på min ände då det bara går att trycka på själva texten för att komma vidare.
+Everything on the website should work as instructed in the task, but an error can occur when you press a button in one of the dropdowns that are available, and the button does nothing. 
+It is a styling error on my end as it is only possible to press the text itself to move on.
 
-Om det uppstår ett Error meddelande i consolen när du trycker i navbaren är det bara att ignorera.
+Recently I noticed a bug with the Register button where nothing happens when the user registers, the code itself is correct so I believe this is an API issue.
 
-Det kan hända att dropdown buggar ibland och inte försvinner när man försöker trycka bort dem. Dropdown funkar för alla komponenter i vanliga fall. Om det händer kan du ladda om hemsidan så funkar de igen.
+For this project, I did not spend time on making modules for popups, so their placeholder, for now, is an alert popup until I update it.
+
+Dropdowns may occasionally bug and not work when you try to close them. Dropdown works for all components in normal cases. If that happens, you can reload the website and they will work again.
